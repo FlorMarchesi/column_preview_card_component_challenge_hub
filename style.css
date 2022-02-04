@@ -1,0 +1,139 @@
+/*Lexend Deca*/
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+/*Big Shoulders Display*/
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+
+:root{
+  /*Primary*/
+  --orange: hsl(31, 77%, 52%);
+  --cyan: hsl(184, 100%, 22%);
+  --dark_cyan: hsl(179, 100%, 13%);
+
+  /*Neutral*/
+  --white: hsla(0, 0%, 100%, 0.75);
+  --light_gray: hsl(0, 0%, 95%);
+}
+
+body{
+  font-size: 15px;
+  display: grid;
+  height: 100vh;
+  font-family: "Lexend Deca";
+  color: var(--white);
+  justify-content: center;
+  align-items: center;
+}
+
+h2{
+  font-family: "Big Shoulders Display";
+  font-size: 2em;
+  color: var(--white);
+}
+
+p{
+  padding-bottom: 5em;
+}
+
+.body_div__sedans{
+  width: 250px;
+  height: auto;
+  background-color: var(--orange);
+  padding: 3em;
+}
+
+.body_div__sedans button{
+  color: var(--orange);
+}
+
+.body_div__suvs{
+  width: 250px;
+  height: auto;
+  background-color: var(--cyan);
+  padding: 3em;
+}
+.body_div__suvs button{
+  color: var(--cyan);
+}
+.body_div__luxury{
+  width: 250px;
+  height: auto;
+  background-color: var(--dark_cyan);
+  padding: 3em;
+}
+
+.body_div__luxury button{
+  color: var(--dark_cyan);
+}
+
+button{
+  padding: 1em 2em;
+  background-color: var(--light_gray);
+  border-radius: 30px;
+  font-family: "Lexend Deca";
+  font-weight: 700;
+  border: 2px solid var(--light_gray);
+}
+
+
+.body_div__sedans button:hover{
+  cursor: pointer;
+  background-color: var(--orange);
+  border: 2px solid var(--light_gray);
+  color: var(--light_gray);
+}
+
+.body_div__suvs button:hover{
+  cursor: pointer;
+  background-color: var(--cyan);
+  border: 2px solid var(--light_gray);
+  color: var(--light_gray);
+}
+
+.body_div__luxury button:hover{
+  cursor: pointer;
+  background-color: var(--dark_cyan);
+  border: 2px solid var(--light_gray);
+  color: var(--light_gray);
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 1022px) {
+  body{
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+  }
+  .body_div__sedans{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  .body_div__luxury{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px
+  }
+
+}
+
+@media screen and (min-width: 1023px) {
+  body{
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+  }
+  .body_div__sedans{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .body_div__luxury{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: black;
+}
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
